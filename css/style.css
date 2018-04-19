@@ -48,6 +48,10 @@ body{
     font-weight: bold;
     text-transform: uppercase;
 }
+ul{
+    list-style: none;
+}
+
 /*header*/
 .page-header {
     max-width: 1600px;
@@ -132,6 +136,8 @@ a.icon__nav {
     font-weight: bold;
     border: 2px solid #fff;
     padding: 25px 80px;
+        -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
 }
 .btn:hover{
     background-color: #fff;
@@ -230,13 +236,24 @@ a.icon__nav {
     background-color: #f57365;
     top: 30px;
     left: 0px;
- 
 }
-.app_store {
+.app__store {
     margin-top: 30px;
 }
-.app_store img {
+.app__link{
     margin-right: 10px;
+    cursor: pointer;
+    display: inline-block;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+.app__link:hover{
+   -webkit-transform: scale(1.1);
+           transform: scale(1.1);
+}
+.app__store img{
+    width: 120px;
+    height: 39px;
 }
 
 /*reviews*/
